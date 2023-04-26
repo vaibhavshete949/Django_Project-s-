@@ -50,6 +50,7 @@ class CollectionAPIView(generics.RetrieveAPIView):
     def get(self, request):
         collections = Movie.objects.all()
         l = []
+        "for loop is not working"
         for collection in collections.values():
             genres_data = collection['genres']
             id_data = collection['id']
